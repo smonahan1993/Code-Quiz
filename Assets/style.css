@@ -3,9 +3,43 @@
     --background-color: rgb(163, 85, 163);
 }
 
+.start_btn, 
+.info{
+
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .start_btn button {
 
-    position: absolute;
-    background-color: var(--background-color) ;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    cursor: pointer;
 
+}
+
+.info {
+
+    width: 540px;
+    border-radius: 5px;
+}
+
+.info .info_T {
+
+    height: 60px;
+    width: 100%;
+    display: flex;
+    border-bottom: solid black 2px;
+    align-items: center;
+    padding: 0px 30px;
+    font-weight: 550;
+    font-size: 20px;
 }
