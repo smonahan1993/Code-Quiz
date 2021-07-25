@@ -1,82 +1,79 @@
 <!DOCTYPE html>
+<!-- Starter code By CodingNepal - www.codingnepalweb.com -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Quiz</title>
-    <link href="assets/style.css" rel="stylesheet" type="text/css">
-    
+    <title>Code Quiz </title>
+    <link rel="stylesheet" href="Assets/style.css">
 </head>
 <body>
+    <!-- start Quiz button -->
     <div class="start_btn"><button>Start Quiz</button></div>
-    <!-- info box -->
-    <div class="info">
-        <div class="info_T">
-            <span>How the Quiz Works</span>
-        </div>
-        <div class="info_list">
-            <div class="rules">1. You will have 60 seconds at the beginning of the timer</div>
-            <div class="rules">2. You cannot change your answers once submitting an answer</div>
-            <div class="rules">3. You cannot exit quiz once you've started it</div>
-            <div class="rules">4. 5 seconds will be subtracted from timer for each incorrect answer</div>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Coding Quiz Challenge</span></div>
+        <div class="info-list">
+            <div class="info">Try to answer the following questions within the time limit. Keep
+                in mind that incorrect answers will penalize your score time by 10 seconds!
+            </div>
+            
         </div>
         <div class="buttons">
-            <button class="Exit">Exit Quiz</button>
-            <button class="Restart">Continue</button>
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
         </div>
-
     </div>
-
- <!-- Quiz Box -->
- <div class="quiz_box">
-    <header>
-        <div class="title">Code Quiz </div>
-        <div class="timer">
-            <div class="time_left_txt">Time Left</div>
-            <div class="timer_sec">15</div>
-        </div>
-        <div class="time_line"></div>
-    </header>
-    <section>
-        <div class="que_text">
-            <!-- Here I've inserted question from JavaScript -->
-        </div>
-        <div class="option_list">
-            <!-- Here I've inserted options from JavaScript -->
-        </div>
-    </section>
-
-    <!-- footer of Quiz Box -->
-    <footer>
-        <div class="total_que">
-            <!-- Here I've inserted Question Count Number from JavaScript -->
-        </div>
-        <button class="next_btn">Next Que</button>
-    </footer>
-</div>
-
-<!-- Result Box -->
-<div class="result_box">
-    <div class="icon">
-        <i class="fas fa-crown"></i>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">75</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+        <p id="correct-incorrect"></p>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
     </div>
-    <div class="complete_text">You've completed the Quiz!</div>
-    <div class="score_text">
-        <!-- Here I've inserted Score Result from JavaScript -->
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="complete_text">All done!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+        <!-- imported from bootstrap -->
+        <form>
+            <div class="form-group">
+              <label for="exampleInputInitials">Your Initials</label>
+              <input type="initials" class="form-control" id="exampleInputInitials" aria-describedby="initialsHelp" placeholder="Enter your initials">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
     </div>
-    <div class="buttons">
-        <button class="restart">Replay Quiz</button>
-        <button class="quit">Quit Quiz</button>
-    </div>
-</div>
-
-<!-- for questions -->
-<script src="Assets/questions.js"></script>
-
-<!-- contains quiz code -->
-<script src="Assets/script.js"></script>
-
-    
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="Assets/questions.js"></script>
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="Assets/script.js"></script>
 </body>
+</html>
 </html>
