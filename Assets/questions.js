@@ -18,7 +18,7 @@ let questions = [
     options: [
       "quotes",
       "curly brackets",
-      "parantheses",
+      "parentheses",
       "square brackets"
     ]
   },
